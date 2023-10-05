@@ -6127,3 +6127,321 @@ blockquote.pullquote.right {
 .layout>#archive {
   background: rgba(255,255,255,0.8);
 }
+/* 分类页面样式 */
+#page .category-lists .category-list .category-list-item {
+  position: relative;
+  display: inline-block;
+  padding: 0 1rem;
+  width: 48%;
+  font-weight: 700;
+  margin: 0 0.5% 2% 0.5%;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: #323204 50px 50px 50px 50px inset;
+  -webkit-box-shadow: #323204 50px 50px 50px 50px inset;
+  box-shadow: #323204 50px 50px 50px 50px inset;
+  border-radius: 8px;
+}
+@media (max-width: 640px) {
+  #page .category-lists .category-list .category-list-item {
+    width: 95%;
+    border-radius: 8px;
+    margin-top: 3px;
+  }
+}
+#page .category-lists .category-list .category-list-item::before {
+  display: none;
+}
+#page .category-lists .category-list .category-list-item .category-list-link {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 0.4rem;
+}
+#page .category-lists .category-list .category-list-item .category-list-link::after {
+  content: "";
+  position: relative;
+  width: 0;
+  bottom: 0;
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+#page .category-lists .category-list .category-list-item .category-list-link:hover::after {
+  width: 60%;
+  left: 1%;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+}
+#page .category-lists .category-list .category-list-item .category-list-count {
+  color: #fff;
+  font-size: 1.3rem;
+}
+#page .category-lists .category-list .category-list-item .category-list-count::before {
+  content: "\f02d";
+  padding-right: 15px;
+  font-family: "Font Awesome 6 Free";
+}
+/* #page .category-list-count::before, */
+#page .category-list-count::after {
+  display: none;
+}
+#page .category-lists .category-list li.category-list-item a.category-list-link::before {
+  position: absolute;
+  font-size: 4rem;
+  line-height: 4rem;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 8px;
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  -ms-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+}
+#page .category-lists .category-list li.category-list-item a.category-list-link:hover::before {
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  filter: alpha(opacity=90);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -o-transform: rotate(0);
+  -ms-transform: rotate(0);
+  transform: rotate(0);
+  -ms-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -o-transform: rotate(0);
+}
+/* 优秀文章 */
+#page .category-lists .category-list li.category-list-item:nth-child(1) {
+  background: #4074f6;
+  background: -webkit--webkit-linear-gradient(left, #667db6, #0082c8, #0082c8, #667db6);
+  background: -webkit--moz-linear-gradient(left, #667db6, #0082c8, #0082c8, #667db6);
+  background: -webkit--o-linear-gradient(left, #667db6, #0082c8, #0082c8, #667db6);
+  background: -webkit--ms-linear-gradient(left, #667db6, #0082c8, #0082c8, #667db6);
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(1) a.category-list-link::before {
+  content: "📑";
+}
+/* 博客总结 */
+#page .category-lists .category-list li.category-list-item:nth-child(2) {
+  background: -webkit--webkit-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -webkit--moz-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -webkit--o-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -webkit--ms-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -webkit-linear-gradient(to right, #ba52ed, #ff99fe);
+  background: -moz--webkit-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -moz--moz-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -moz--o-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -moz--ms-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -moz-linear-gradient(to right, #ba52ed, #ff99fe);
+  background: -o--webkit-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -o--moz-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -o--o-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -o--ms-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -o-linear-gradient(to right, #ba52ed, #ff99fe);
+  background: -ms--webkit-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -ms--moz-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -ms--o-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -ms--ms-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -ms-linear-gradient(to right, #ba52ed, #ff99fe);
+  background: -webkit-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -moz-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -o-linear-gradient(left, #ba52ed, #ff99fe);
+  background: -ms-linear-gradient(left, #ba52ed, #ff99fe);
+  background: linear-gradient(to right, #ba52ed, #ff99fe);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(2) a.category-list-link::before {
+  content: "📚";
+}
+/* 博客搭建 */
+#page .category-lists .category-list li.category-list-item:nth-child(3) {
+  background: -webkit--webkit-linear-gradient(left, #6639a6, #3490de);
+  background: -webkit--moz-linear-gradient(left, #6639a6, #3490de);
+  background: -webkit--o-linear-gradient(left, #6639a6, #3490de);
+  background: -webkit--ms-linear-gradient(left, #6639a6, #3490de);
+  background: -webkit-linear-gradient(to right, #6639a6, #3490de);
+  background: -moz--webkit-linear-gradient(left, #6639a6, #3490de);
+  background: -moz--moz-linear-gradient(left, #6639a6, #3490de);
+  background: -moz--o-linear-gradient(left, #6639a6, #3490de);
+  background: -moz--ms-linear-gradient(left, #6639a6, #3490de);
+  background: -moz-linear-gradient(to right, #6639a6, #3490de);
+  background: -o--webkit-linear-gradient(left, #6639a6, #3490de);
+  background: -o--moz-linear-gradient(left, #6639a6, #3490de);
+  background: -o--o-linear-gradient(left, #6639a6, #3490de);
+  background: -o--ms-linear-gradient(left, #6639a6, #3490de);
+  background: -o-linear-gradient(to right, #6639a6, #3490de);
+  background: -ms--webkit-linear-gradient(left, #6639a6, #3490de);
+  background: -ms--moz-linear-gradient(left, #6639a6, #3490de);
+  background: -ms--o-linear-gradient(left, #6639a6, #3490de);
+  background: -ms--ms-linear-gradient(left, #6639a6, #3490de);
+  background: -ms-linear-gradient(to right, #6639a6, #3490de);
+  background: -webkit-linear-gradient(left, #6639a6, #3490de);
+  background: -moz-linear-gradient(left, #6639a6, #3490de);
+  background: -o-linear-gradient(left, #6639a6, #3490de);
+  background: -ms-linear-gradient(left, #6639a6, #3490de);
+  background: linear-gradient(to right, #6639a6, #3490de);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(3) a.category-list-link::before {
+  content: "🦋";
+}
+#page .category-lists .category-list li.category-list-item:nth-child(4) {
+  background: -webkit--webkit-linear-gradient(right, #38ef7d, #11998e);
+  background: -webkit--moz-linear-gradient(right, #38ef7d, #11998e);
+  background: -webkit--o-linear-gradient(right, #38ef7d, #11998e);
+  background: -webkit--ms-linear-gradient(right, #38ef7d, #11998e);
+  background: -webkit-linear-gradient(to left, #38ef7d, #11998e);
+  background: -moz--webkit-linear-gradient(right, #38ef7d, #11998e);
+  background: -moz--moz-linear-gradient(right, #38ef7d, #11998e);
+  background: -moz--o-linear-gradient(right, #38ef7d, #11998e);
+  background: -moz--ms-linear-gradient(right, #38ef7d, #11998e);
+  background: -moz-linear-gradient(to left, #38ef7d, #11998e);
+  background: -o--webkit-linear-gradient(right, #38ef7d, #11998e);
+  background: -o--moz-linear-gradient(right, #38ef7d, #11998e);
+  background: -o--o-linear-gradient(right, #38ef7d, #11998e);
+  background: -o--ms-linear-gradient(right, #38ef7d, #11998e);
+  background: -o-linear-gradient(to left, #38ef7d, #11998e);
+  background: -ms--webkit-linear-gradient(right, #38ef7d, #11998e);
+  background: -ms--moz-linear-gradient(right, #38ef7d, #11998e);
+  background: -ms--o-linear-gradient(right, #38ef7d, #11998e);
+  background: -ms--ms-linear-gradient(right, #38ef7d, #11998e);
+  background: -ms-linear-gradient(to left, #38ef7d, #11998e);
+  background: -webkit-linear-gradient(right, #38ef7d, #11998e);
+  background: -moz-linear-gradient(right, #38ef7d, #11998e);
+  background: -o-linear-gradient(right, #38ef7d, #11998e);
+  background: -ms-linear-gradient(right, #38ef7d, #11998e);
+  background: linear-gradient(to left, #38ef7d, #11998e);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(4) a.category-list-link::before {
+  content: "📔";
+}
+/* 实用教程 */
+#page .category-lists .category-list li.category-list-item:nth-child(5) {
+  background: -webkit--webkit-linear-gradient(left, #b91d73, #f953c6);
+  background: -webkit--moz-linear-gradient(left, #b91d73, #f953c6);
+  background: -webkit--o-linear-gradient(left, #b91d73, #f953c6);
+  background: -webkit--ms-linear-gradient(left, #b91d73, #f953c6);
+  background: -webkit-linear-gradient(to right, #b91d73, #f953c6);
+  background: -moz--webkit-linear-gradient(left, #b91d73, #f953c6);
+  background: -moz--moz-linear-gradient(left, #b91d73, #f953c6);
+  background: -moz--o-linear-gradient(left, #b91d73, #f953c6);
+  background: -moz--ms-linear-gradient(left, #b91d73, #f953c6);
+  background: -moz-linear-gradient(to right, #b91d73, #f953c6);
+  background: -o--webkit-linear-gradient(left, #b91d73, #f953c6);
+  background: -o--moz-linear-gradient(left, #b91d73, #f953c6);
+  background: -o--o-linear-gradient(left, #b91d73, #f953c6);
+  background: -o--ms-linear-gradient(left, #b91d73, #f953c6);
+  background: -o-linear-gradient(to right, #b91d73, #f953c6);
+  background: -ms--webkit-linear-gradient(left, #b91d73, #f953c6);
+  background: -ms--moz-linear-gradient(left, #b91d73, #f953c6);
+  background: -ms--o-linear-gradient(left, #b91d73, #f953c6);
+  background: -ms--ms-linear-gradient(left, #b91d73, #f953c6);
+  background: -ms-linear-gradient(to right, #b91d73, #f953c6);
+  background: -webkit-linear-gradient(left, #b91d73, #f953c6);
+  background: -moz-linear-gradient(left, #b91d73, #f953c6);
+  background: -o-linear-gradient(left, #b91d73, #f953c6);
+  background: -ms-linear-gradient(left, #b91d73, #f953c6);
+  background: linear-gradient(to right, #b91d73, #f953c6);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(5) a.category-list-link::before {
+  content: "✨";
+}
+/* 敲敲代码 */
+#page .category-lists .category-list li.category-list-item:nth-child(6) {
+  background: -webkit--webkit-linear-gradient(left, #f12711, #f5af19);
+  background: -webkit--moz-linear-gradient(left, #f12711, #f5af19);
+  background: -webkit--o-linear-gradient(left, #f12711, #f5af19);
+  background: -webkit--ms-linear-gradient(left, #f12711, #f5af19);
+  background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+  background: -moz--webkit-linear-gradient(left, #f12711, #f5af19);
+  background: -moz--moz-linear-gradient(left, #f12711, #f5af19);
+  background: -moz--o-linear-gradient(left, #f12711, #f5af19);
+  background: -moz--ms-linear-gradient(left, #f12711, #f5af19);
+  background: -moz-linear-gradient(to right, #f12711, #f5af19);
+  background: -o--webkit-linear-gradient(left, #f12711, #f5af19);
+  background: -o--moz-linear-gradient(left, #f12711, #f5af19);
+  background: -o--o-linear-gradient(left, #f12711, #f5af19);
+  background: -o--ms-linear-gradient(left, #f12711, #f5af19);
+  background: -o-linear-gradient(to right, #f12711, #f5af19);
+  background: -ms--webkit-linear-gradient(left, #f12711, #f5af19);
+  background: -ms--moz-linear-gradient(left, #f12711, #f5af19);
+  background: -ms--o-linear-gradient(left, #f12711, #f5af19);
+  background: -ms--ms-linear-gradient(left, #f12711, #f5af19);
+  background: -ms-linear-gradient(to right, #f12711, #f5af19);
+  background: -webkit-linear-gradient(left, #f12711, #f5af19);
+  background: -moz-linear-gradient(left, #f12711, #f5af19);
+  background: -o-linear-gradient(left, #f12711, #f5af19);
+  background: -ms-linear-gradient(left, #f12711, #f5af19);
+  background: linear-gradient(to right, #f12711, #f5af19);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(6) a.category-list-link::before {
+  content: "💻";
+}
+/* 生活杂谈 */
+#page .category-lists .category-list li.category-list-item:nth-child(7) {
+  background: -webkit--webkit-linear-gradient(left, #009ad6, #1b315e);
+  background: -webkit--moz-linear-gradient(left, #009ad6, #1b315e);
+  background: -webkit--o-linear-gradient(left, #009ad6, #1b315e);
+  background: -webkit--ms-linear-gradient(left, #009ad6, #1b315e);
+  background: -webkit-linear-gradient(to right, #009ad6, #1b315e);
+  background: -moz--webkit-linear-gradient(left, #009ad6, #1b315e);
+  background: -moz--moz-linear-gradient(left, #009ad6, #1b315e);
+  background: -moz--o-linear-gradient(left, #009ad6, #1b315e);
+  background: -moz--ms-linear-gradient(left, #009ad6, #1b315e);
+  background: -moz-linear-gradient(to right, #009ad6, #1b315e);
+  background: -o--webkit-linear-gradient(left, #009ad6, #1b315e);
+  background: -o--moz-linear-gradient(left, #009ad6, #1b315e);
+  background: -o--o-linear-gradient(left, #009ad6, #1b315e);
+  background: -o--ms-linear-gradient(left, #009ad6, #1b315e);
+  background: -o-linear-gradient(to right, #009ad6, #1b315e);
+  background: -ms--webkit-linear-gradient(left, #009ad6, #1b315e);
+  background: -ms--moz-linear-gradient(left, #009ad6, #1b315e);
+  background: -ms--o-linear-gradient(left, #009ad6, #1b315e);
+  background: -ms--ms-linear-gradient(left, #009ad6, #1b315e);
+  background: -ms-linear-gradient(to right, #009ad6, #1b315e);
+  background: -webkit-linear-gradient(left, #009ad6, #1b315e);
+  background: -moz-linear-gradient(left, #009ad6, #1b315e);
+  background: -o-linear-gradient(left, #009ad6, #1b315e);
+  background: -ms-linear-gradient(left, #009ad6, #1b315e);
+  background: linear-gradient(to right, #009ad6, #1b315e);
+}
+#page .category-lists .category-list li.category-list-item:nth-child(7) a.category-list-link::before {
+  content: "💬";
+}
+/* 标签 */
+#aside-content .card-tag-cloud a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 0 5px;
+}
+.tag-cloud-list a {
+  border: 1px solid;
+  line-height: 1.5;
+  border-radius: 6px;
+  padding: 5px 15px;
+  font-size: 1.2rem;
+  margin: 5px;
+}
